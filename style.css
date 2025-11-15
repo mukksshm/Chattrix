@@ -382,4 +382,105 @@ body{
 .row{ display:flex; gap:14px; align-items:center; }
 .col{ display:flex; flex-direction:column; gap:8px; }
 
+/* -------------------------
+   LOADING SCREEN
+--------------------------- */
+#loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #0d0c11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  transition: opacity .5s ease;
+}
+
+#loader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-ring {
+  width: 70px;
+  height: 70px;
+  border: 5px solid transparent;
+  border-top: 5px solid #ff3d8b;
+  border-right: 5px solid #7b61ff;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* -------------------------
+   PAGE TRANSITIONS
+--------------------------- */
+body {
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+/* -------------------------
+   SCROLL TO TOP BUTTON
+--------------------------- */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 28px;
+  right: 26px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff3d8b, #ffa63d);
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease;
+  z-index: 1400;
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* -------------------------
+   FEED PAGE — POSTS
+--------------------------- */
+.post {
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  margin-bottom: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+}
+.post h2 {
+  font-size: 20px;
+  background: linear-gradient(90deg,#ff3d8b,#ffa63d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.post p { margin-top: 8px; color: var(--muted); }
+
+.post-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  color: #ccc;
+}
+.post-actions div:hover { color: white; cursor: pointer; }
+
 /* End of style.css */
