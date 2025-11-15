@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Communities – Chattrix</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chattrix — Communities</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">Chattrix</div>
+      </div>
 
-<header>
-  <div class="logo">Chattrix</div>
-  <nav>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="communities.html">Communities</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="theme-toggle" id="theme-toggle" title="Toggle theme">🌙</div>
+        <div class="menu-btn" title="Menu">☰</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-menu">
     <a href="index.html">Home</a>
     <a href="explore.html">Explore</a>
     <a href="communities.html">Communities</a>
     <a href="profile.html">Profile</a>
     <a href="about.html">About</a>
     <a href="login.html">Login</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Communities</h1>
-  <p>Join groups that match your vibe.</p>
-</section>
-
-<section class="features">
-  <div class="feature-card">
-    <h3>💬 Tech Geeks</h3>
-    <p>For coding, AI, and tech lovers.</p>
   </div>
 
-  <div class="feature-card">
-    <h3>🎨 Creators Hub</h3>
-    <p>Artists, editors, designers — creativity lives here.</p>
-  </div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Communities</h1>
+          <p>Find your people — groups that match your interests, skills and vibe.</p>
+        </div>
 
-  <div class="feature-card">
-    <h3>📚 Learners Club</h3>
-    <p>Study groups, motivation, skill growth.</p>
-  </div>
+        <div class="hero-right">
+          <div class="hero-card card">
+            <strong>Join a community</strong>
+            <p style="margin-top:8px;color:var(--muted)">Create, follow or contribute — communities are the heart of Chattrix.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="feature-card">
-    <h3>🎧 Music Zone</h3>
-    <p>Share beats, playlists, and vibes.</p>
-  </div>
-</section>
+    <section class="features">
+      <article class="card">
+        <h3>💬 Tech Geeks</h3>
+        <p>For coding, AI, and tech lovers — tutorials, memes, and debates.</p>
+      </article>
 
-<footer>
-  <p>© 2025 Chattrix — Join the Conversation</p>
-</footer>
+      <article class="card">
+        <h3>🎨 Creators Hub</h3>
+        <p>Artists, editors, designers — critique, collab, and show your work.</p>
+      </article>
 
+      <article class="card">
+        <h3>📚 Learners Club</h3>
+        <p>Study groups, motivation channels, and resource sharing.</p>
+      </article>
+
+      <article class="card">
+        <h3>🎧 Music Zone</h3>
+        <p>Share beats, playlists, and new finds — for listeners and creators.</p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Chattrix — Join the Conversation</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

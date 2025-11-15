@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore – Chattrix</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chattrix — Explore</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">Chattrix</div>
+      </div>
 
-<header>
-  <div class="logo">Chattrix</div>
-  <nav>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="communities.html">Communities</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="theme-toggle" id="theme-toggle" title="Toggle theme">🌙</div>
+        <div class="menu-btn" title="Menu">☰</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-menu">
     <a href="index.html">Home</a>
     <a href="explore.html">Explore</a>
     <a href="communities.html">Communities</a>
     <a href="profile.html">Profile</a>
     <a href="about.html">About</a>
     <a href="login.html">Login</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Explore Trends & Topics</h1>
-  <p>Discover what’s trending across Chattrix.</p>
-</section>
-
-<section class="features">
-  <div class="feature-card">
-    <h3>#Tech</h3>
-    <p>Latest innovations, gadgets, and AI breakthroughs.</p>
   </div>
 
-  <div class="feature-card">
-    <h3>#Lifestyle</h3>
-    <p>Fashion, fitness, and inspiration.</p>
-  </div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Explore Trends & Topics</h1>
+          <p>Discover what’s trending across Chattrix — tags, top posts and curated lists.</p>
+        </div>
 
-  <div class="feature-card">
-    <h3>#Gaming</h3>
-    <p>Releases, esports, gaming updates.</p>
-  </div>
+        <div class="hero-right">
+          <div class="hero-card card">
+            <strong>Trending Now</strong>
+            <p style="margin-top:8px;color:var(--muted)">#Tech • #AI • #Memes • #Productivity</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="feature-card">
-    <h3>#Memes</h3>
-    <p>The funniest, craziest viral content.</p>
-  </div>
-</section>
+    <section class="features">
+      <article class="card">
+        <h3>#Tech</h3>
+        <p>Latest innovations, gadgets, and AI breakthroughs from creators and devs.</p>
+      </article>
 
-<footer>
-  <p>© 2025 Chattrix — Explore the Internet</p>
-</footer>
+      <article class="card">
+        <h3>#Lifestyle</h3>
+        <p>Design, wellness, fashion and everyday hacks to make life smoother.</p>
+      </article>
 
+      <article class="card">
+        <h3>#Gaming</h3>
+        <p>Releases, esports, streaming and community highlights.</p>
+      </article>
+
+      <article class="card">
+        <h3>#Memes</h3>
+        <p>Light-hearted, viral content to brighten your feed — share the laughs.</p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Chattrix — Explore the Internet</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

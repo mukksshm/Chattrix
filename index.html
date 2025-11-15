@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chattrix – Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chattrix — Home</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">Chattrix</div>
+      </div>
 
-  <header>
-    <div class="logo">Chattrix</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="explore.html">Explore</a>
-      <a href="communities.html">Communities</a>
-      <a href="profile.html">Profile</a>
-      <a href="about.html">About</a>
-      <a href="login.html">Login</a>
-    </nav>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="communities.html">Communities</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="theme-toggle" id="theme-toggle" title="Toggle theme">🌙</div>
+        <div class="menu-btn" title="Menu">☰</div>
+      </div>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Chattrix</h1>
-    <p>A funky social space where ideas spark, trends rise, and communities grow.</p>
-    <button class="cta-btn">Get Started</button>
-  </section>
+  <div class="mobile-nav" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="communities.html">Communities</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+  </div>
 
-  <section class="features">
-    <div class="feature-card">
-      <h3>🔥 Trending Topics</h3>
-      <p>Catch up with what’s hot and viral.</p>
-    </div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Welcome to Chattrix</h1>
+          <p>A funky social space where ideas spark, trends rise, and communities grow. Built for projects, students, and creators.</p>
+          <div class="row" style="margin-top:18px;">
+            <a class="cta-btn" href="explore.html">Explore Trends</a>
+            <a class="badge" href="communities.html">Join Communities</a>
+          </div>
+        </div>
 
-    <div class="feature-card">
-      <h3>🎭 Stylish UI</h3>
-      <p>Bright gradients, funky animations, smooth interactions.</p>
-    </div>
+        <div class="hero-right">
+          <div class="hero-card card">
+            <strong>What's new?</strong>
+            <p style="margin-top:8px;color:var(--muted)">Neon gradients, glass UI and responsive navigation — now in your project. Try toggling theme or open the menu on mobile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="feature-card">
-      <h3>🌐 Explore Communities</h3>
-      <p>Join groups, discuss ideas, and grow with people.</p>
-    </div>
+    <section class="features" aria-label="features">
+      <article class="card">
+        <h3>🔥 Trending Topics</h3>
+        <p>Catch up with what’s hot and viral across Chattrix — tags, threads and curated posts.</p>
+      </article>
 
-    <div class="feature-card">
-      <h3>⚡ Super Fast</h3>
-      <p>Optimized design for speed and simplicity.</p>
-    </div>
-  </section>
+      <article class="card">
+        <h3>🎭 Stylish UI</h3>
+        <p>Bright gradients, frosted glass panels and snappy micro-interactions for a premium feel.</p>
+      </article>
 
-  <footer>
-    <p>© 2025 Chattrix — Made with ❤</p>
-  </footer>
+      <article class="card">
+        <h3>🌐 Explore Communities</h3>
+        <p>Join groups, discuss ideas, and grow with people who match your interest and vibe.</p>
+      </article>
 
+      <article class="card">
+        <h3>⚡ Super Fast</h3>
+        <p>Optimized for simple static hosting. Lightweight and project-ready for your capstone.</p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Chattrix — Made with ❤</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

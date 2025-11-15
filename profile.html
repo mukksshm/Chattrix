@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile – Chattrix</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chattrix — Profile</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">Chattrix</div>
+      </div>
 
-<header>
-  <div class="logo">Chattrix</div>
-  <nav>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="communities.html">Communities</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="theme-toggle" id="theme-toggle" title="Toggle theme">🌙</div>
+        <div class="menu-btn" title="Menu">☰</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-menu">
     <a href="index.html">Home</a>
     <a href="explore.html">Explore</a>
     <a href="communities.html">Communities</a>
     <a href="profile.html">Profile</a>
     <a href="about.html">About</a>
     <a href="login.html">Login</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Your Profile</h1>
-  <p>Manage your activity and customize your presence.</p>
-</section>
-
-<section class="features">
-  <div class="feature-card">
-    <h3>👤 Username</h3>
-    <p>example_user_123</p>
   </div>
 
-  <div class="feature-card">
-    <h3>📌 Posts</h3>
-    <p>You’ve created 12 posts this month.</p>
-  </div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Your Profile</h1>
+          <p>Manage your activity and customize your presence.</p>
+        </div>
 
-  <div class="feature-card">
-    <h3>❤️ Likes Received</h3>
-    <p>Your posts received 249 likes.</p>
-  </div>
+        <div class="hero-right">
+          <div class="hero-card card">
+            <strong>Pro Tip</strong>
+            <p style="margin-top:8px;color:var(--muted)">Update your bio to connect with communities faster — add interests, skills, and links.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="feature-card">
-    <h3>⚙ Settings</h3>
-    <p>Edit privacy, notifications, and appearance.</p>
-  </div>
-</section>
+    <section style="margin-top:20px;">
+      <div class="profile-wrap">
+        <aside class="profile-card card">
+          <div class="avatar">MH</div>
+          <h3 style="margin-top:6px;">example_user_123</h3>
+          <p style="color:var(--muted)">Student • Developer • Creator</p>
 
-<footer>
-  <p>© 2025 Chattrix — Your Space</p>
-</footer>
+          <div class="stats" style="margin-top:14px;">
+            <div class="stat">12 Posts</div>
+            <div class="stat">249 Likes</div>
+            <div class="stat">3 Communities</div>
+          </div>
 
+          <div class="activity" style="margin-top:14px;">
+            <div class="item">Edit profile</div>
+            <div class="item">Privacy settings</div>
+            <div class="item">Manage subscriptions</div>
+          </div>
+        </aside>
+
+        <section class="card" aria-label="user activity">
+          <h3>Recent Activity</h3>
+          <div style="margin-top:12px;">
+            <div class="item" style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);margin-bottom:10px;">
+              Liked a post in <strong>#Tech</strong> • 2 hours ago
+            </div>
+            <div class="item" style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);margin-bottom:10px;">
+              Posted a new thread in <strong>Creators Hub</strong> • 1 day ago
+            </div>
+            <div class="item" style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);">
+              Joined <strong>Music Zone</strong> • 3 days ago
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Chattrix — Your Space</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
