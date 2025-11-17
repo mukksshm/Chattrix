@@ -80,6 +80,7 @@ body{
   letter-spacing: -0.6px;
   background: linear-gradient(60deg, var(--accent-a), var(--accent-b), var(--accent-c));
   background-size: 300% 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 6s ease infinite;
@@ -251,6 +252,7 @@ body{
   margin-bottom:8px;
   font-weight:700;
   background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+  background-clip: text;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
@@ -316,6 +318,7 @@ body{
   font-size:22px;
   margin-bottom:8px;
   background: linear-gradient(90deg, var(--accent-c), var(--accent-a));
+  background-clip: text;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
@@ -470,6 +473,7 @@ body.fade-out {
 .post h2 {
   font-size: 20px;
   background: linear-gradient(90deg,#ff3d8b,#ffa63d);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
