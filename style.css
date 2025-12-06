@@ -122,3 +122,29 @@ body {
   color: var(--accent);
   margin-bottom: 6px;
 }
+/* LIGHT MODE */
+.light-mode {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #444444;
+  --card: #f2f2f2;
+}
+/* MOBILE NAV HIDE BY DEFAULT */
+.mobile-nav {
+  display: none;
+  background: #14141a;
+  padding: 20px;
+  flex-direction: column;
+  gap: 12px;
+}
+/* Simple buttons for JS demo */
+button {
+  padding: 10px 14px;
+  margin: 6px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
