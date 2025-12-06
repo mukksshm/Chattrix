@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chattrix — Login</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -41,18 +40,20 @@
 
   <main class="container">
     <section class="login-page">
-      <div class="login-box card">
+      <div class="login-box card" style="max-width:420px;margin:40px auto;padding:28px;">
         <h2>Welcome Back</h2>
         <p style="color:var(--muted);margin-bottom:12px;">Sign in to continue to Chattrix</p>
 
-        <input type="text" placeholder="Username" aria-label="username" />
-        <input type="password" placeholder="Password" aria-label="password" />
+        <input id="username" type="text" placeholder="Username" aria-label="username" style="width:100%;padding:10px;margin-bottom:10px;border-radius:8px;border:1px solid #333;background:transparent;color:var(--text);" />
+        <input id="password" type="password" placeholder="Password" aria-label="password" style="width:100%;padding:10px;margin-bottom:14px;border-radius:8px;border:1px solid #333;background:transparent;color:var(--text);" />
 
-        <button class="login-btn">Sign In</button>
+        <button id="signinBtn" class="login-btn" type="button" style="width:100%;padding:12px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700;cursor:pointer;">
+          Sign In
+        </button>
 
         <div style="margin-top:12px;color:var(--muted);font-size:14px;text-align:center;">
           Don't have an account? 
-          <a href="index.html" style="color:var(--accent-b);font-weight:700;text-decoration:none;">Get started</a>
+          <a href="index.html" style="color:var(--accent);font-weight:700;text-decoration:none;">Get started</a>
         </div>
       </div>
     </section>
