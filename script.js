@@ -9,3 +9,8 @@ function loginUser() {
     alert("Welcome back!");
   }
 }
+
+const btn = document.getElementById("signinBtn");
+
+btn.addEventListener("click", loginUser)
+
